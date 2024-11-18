@@ -1,0 +1,144 @@
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  padding-top: 5.75rem;
+}
+
+.northern-continent p:nth-of-type(1) {
+  text-transform: uppercase;
+  color: var(--cor-4);
+  font-weight: 600;
+  font-size: 0.875rem;
+  padding-bottom: 1.3rem;
+}
+
+.northern-continent h1 {
+  font-size: 3.75rem;
+  color: var(--cor-4);
+  max-width: 10ch;
+  padding-bottom: 2rem;
+}
+
+.northern-continent p:nth-of-type(2) {
+  color: var(--cor-4);
+  font-weight: 500;
+  font-size: 1.125rem;
+  padding-bottom: 1.375rem;
+  max-width: 50ch;
+}
+
+.meridian-box {
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+  padding-bottom: 2.5rem;
+}
+
+.meridian-box .btn {
+  padding: 1rem 2rem;
+  border-radius: 10px;
+  border: none;
+  color: var(--cor-6);
+  background: var(--cor-1);
+  text-transform: uppercase;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.meridian-box p a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--cor-1);
+  position: relative;
+}
+
+.meridian-box a::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: var(--cor-1);
+  position: absolute;
+  top: 25px;
+}
+
+.south-continent span:nth-of-type(1) {
+  margin-left: 1.7rem;
+  position: relative;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.south-continent span:nth-of-type(2) {
+  margin-left: 3.5rem;
+  position: relative;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.south-continent  span::before {
+  content: "";
+  display: inline-block;
+  background: url("../resources/Done_ring_round_fill.svg") no-repeat;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  left: -30px;
+}
+
+.picture img {
+  width: auto;
+  height: auto;
+}
+
+@media (max-width: 800px) {
+  .grid {
+    display: flex;
+    flex-direction: column;
+    max-width: 470px;
+    padding: .2rem;
+  }
+
+  .northern-continent p:nth-of-type(1) {
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+  }
+
+  .northern-continent h1 {
+    font-size: 2.1rem;
+    max-width: 35ch;
+  }
+
+  .northern-continent p:nth-of-type(2) {
+    color: var(--cor-5);
+    font-size: 0.925rem;
+    max-width: 35rem;
+  }
+
+  .south-continent {
+    padding-bottom: 2.2rem;
+  }
+
+  .south-continent span {
+    color: var(--cor-5);
+  }
+
+  .picture {
+    order: -1;
+  }
+
+  .author-info {
+    font-size: .7rem;
+  }
+
+  .author-info a {
+    font-size: .7rem;
+  }
+}
+
+@media (max-width: 1440px) {
+  .container {
+    max-width: 1280px;
+  }
+}

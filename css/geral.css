@@ -1,0 +1,55 @@
+:root {
+  --cor-1: #2A4DD0;
+  --cor-2: #4CA154;
+  --cor-3: #111729;
+  --cor-4: #223344;
+  --cor-5: #909193;
+  --cor-6: #F2F9FE;
+  --cor-7: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Poppins", sans-serif;
+  background: var(--cor-6);
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--cor-4);
+}
+
+.container {
+  max-width: 1440px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.author-info {
+  font-size: 1rem;
+  text-align: center;
+  margin-top: 16px;
+  color: rgb(55, 65, 81);
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  display: block;
+}
+
+.author-info a {
+  text-decoration: none;
+}

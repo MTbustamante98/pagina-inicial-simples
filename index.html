@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Página inicial simples - Alarado" />
+    <title>Simple Homepage - Alarado | devChallenges.io</title>
+    <link
+      rel="icon"
+      href="resources/favicon.ico"
+      type="image/x-icon"
+      sizes="96x96"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header container">
+      <div class="logo">
+        <a href="./">
+          <img
+            id="logo"
+            src="/resources/alarado-icon-homepage.svg"
+            width="141"
+            height="24"
+          />
+        </a>
+      </div>
+      <button data-menu="button" aria-expanded="false" aria-controls="menu">
+        <img
+          id="burguer"
+          src="/resources/hamburger-button.svg"
+          width="32"
+          height="32"
+          alt="
+          Representation icon menu burger"
+        />
+      </button>
+      <nav aria-label="primaria">
+        <ul>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Resource</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="fill">
+        <button data-animacao="button">
+          <div class="effect"></div>
+          <div class="effect-2"></div>
+          <img
+            id="moonFill"
+            src="/resources/Moon_fill_light.svg"
+            width="24"
+            height="24"
+            alt="
+                dark theme"
+          />
+          <img
+            id="sunFill"
+            src="/resources/Sun_fill.svg"
+            width="24"
+            height="24"
+            alt="
+                clear theme
+                "
+          />
+        </button>
+      </div>
+    </header>
+    <main class="grid container">
+      <div class="main-container">
+        <div class="northern-continent">
+          <p>😎 Simple way to communicate</p>
+          <h1>Actions for Accessibility in Design</h1>
+          <p>
+            The fastest way to build and deploy websites with resusable
+            components.
+          </p>
+        </div>
+        <div class="meridian-box">
+          <button class="btn">Get Started</button>
+          <p><a href="">Get live demo</a></p>
+        </div>
+        <div class="south-continent">
+          <span>No credit card required</span>
+          <span>No software to install</span>
+        </div>
+      </div>
+      <div class="picture">
+        <picture>
+          <source
+            media="(max-width: 1024px)"
+            srcset="/resources\hero-image-simple-homepage@2x.png"
+          />
+          <img src="/resources/hero-image-simple-homepage.png" width="730" height="660"/>
+        </picture>
+      </div>
+    </main>
+    <footer class="author-info">
+      Coded by <a href="#">Matheus Bustamante</a> | Challenge by
+      <a href="https://www.devchallenges.io?ref=challenge" target="_blank"
+        >devChallenges.io</a
+      >.
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>

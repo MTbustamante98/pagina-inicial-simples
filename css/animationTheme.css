@@ -1,0 +1,79 @@
+.effect-2.active {
+  display: block !important;
+  animation: show ease .6s forwards;
+ }
+
+@keyframes show {
+  from {
+    opacity: 0;
+  } 
+  to {
+    opacity: 1;
+  }
+}
+
+h1.active {
+  color: var(--cor-7);
+}
+
+span.active {
+  color: var(--cor-7);
+}
+
+.northern-continent p.active {
+  color: var(--cor-7);
+}
+
+.meridian-box p a.active {
+  color: var(--cor-7);
+}
+
+.meridian-box a.active::before {
+ background: var(--cor-7);
+}
+
+li a.active {
+  color: var(--cor-7);
+}
+
+@media (max-width: 800px) {
+  .header {
+    position: relative;
+  }
+
+  .effect-2.active {
+    z-index: -1;
+    padding: 9px;
+    top: 3px;
+    left: 3px;
+  }
+
+  li a.active {
+    color: var(--cor-5);
+  }
+
+  #burguer.active {
+    display: block;
+  }
+
+  nav.active {
+    display: block;
+    animation: slideShow ease .5s forwards;
+  }
+
+  @keyframes slideShow {
+    from { 
+      opacity: 0;
+      transform: translate3d(-30px, 0, 0);
+    }
+    to {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+    }
+  }
+
+  .fill.active {
+    display: block;
+    animation: slideShow ease .7s forwards;
+  }
+}

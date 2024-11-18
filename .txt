@@ -1,0 +1,53 @@
+const animacaoButton = document.querySelector('[data-animacao="button"]');
+const effect1 = document.querySelector(".effect");
+const effect2 = document.querySelector(".effect-2");
+const imageMoon = document.getElementById("moonFill");
+const imageSun = document.getElementById("sunFill");
+const logoIcon = document.getElementById("logo");
+const fill = document.querySelector(".fill");
+
+const listUL = document.querySelectorAll("li a");
+const modifylistUL = Array.from(listUL);
+
+const mainContainer = document.querySelector(".main-container");
+const container = Array.from(mainContainer.querySelectorAll("*"));
+
+function handleClick() {
+  console.log('Button clicked')
+
+
+  if (effect2.classList.contains("active")) {
+    effect2.classList.remove("active");
+    effect1.style.display = "block";
+    effect1.style.animation = "show ease .6s forwards";
+
+    imageMoon.setAttribute("src", "/resources/Moon_fill_light.svg");
+    imageSun.setAttribute("src", "/resources/Sun_fill.svg");
+    logoIcon.setAttribute("src", "/resources/alarado-icon-homepage.svg");
+    document.body.style.background = "initial";
+    fill.style.background = "var(--cor-3)";
+  } else {
+    effect2.classList.add("active");
+    effect1.style.display = "none";
+
+    imageMoon.setAttribute("src", "/resources/Moon_fill.svg");
+    imageSun.setAttribute("src", "/resources/Sun_fill_light.svg");
+    logoIcon.setAttribute("src", "/resources/alarado-icon-homepage-dark.svg");
+    document.body.style.background = "var(--cor-3)";
+    fill.style.background = "var(--cor-4)";
+  }
+
+  container.forEach((elements) => {
+    elements.classList.toggle("active");
+  });
+
+  container[0].classList.remove("active");
+  container[4].classList.remove("active");
+  container[8].classList.remove("active");
+
+  modifylistUL.forEach((elements) => {
+    elements.classList.toggle("active");
+  });
+}
+
+animacaoButton.addEventListener("click", handleClick);
