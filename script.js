@@ -15,7 +15,8 @@ function initHandleClick() {
   const mainContainer = document.querySelector(".main-container");
   const container = Array.from(mainContainer.querySelectorAll("*"));
 
-  function changingTheme() {
+  function changingTheme(event) {
+    event.preventDefault();
     const isActive = effect2.classList.contains("active");
 
     effect2.classList.toggle("active", !isActive);
