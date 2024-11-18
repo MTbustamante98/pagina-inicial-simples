@@ -20,7 +20,6 @@
   display: flex;
   gap: 40px;
   justify-content: center;
-  margin-left: 100px;
 }
 
 .header .fill {
@@ -160,8 +159,8 @@ li a:hover::before {
   }
 
   .fill button img {
-    width: 1.125rem !important;
-    height: 1.125rem !important;
+    width: 1.125rem;
+    height: 1.125rem;
   }
 
   .effect {
