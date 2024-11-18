@@ -24,19 +24,19 @@ function initHandleClick() {
 
     imageMoon.setAttribute(
       "src",
-      isActive ? "./resources/Moon_fill_light.svg" : "./resources/Moon_fill.svg"
+      isActive ? "resources/Moon_fill_light.svg" : "resources/Moon_fill.svg"
     );
 
     imageSun.setAttribute(
       "src",
-      isActive ? "./resources/Sun_fill.svg" : "./resources/Sun_fill_light.svg"
+      isActive ? "resources/Sun_fill.svg" : "resources/Sun_fill_light.svg"
     );
 
     logoIcon.setAttribute(
       "src",
       isActive
-        ? "./resources/alarado-icon-homepage.svg"
-        : "./resources/alarado-icon-homepage-dark.svg"
+        ? "resources/alarado-icon-homepage.svg"
+        : "resources/alarado-icon-homepage-dark.svg"
     );
 
     document.body.style.background = isActive ? "initial" : "var(--cor-3)";
@@ -76,8 +76,8 @@ function initMenuMobile() {
       burguerImg.setAttribute(
         "src",
         willActivate
-          ? "./resources/hamburger-button.svg"
-          : "./resources/close-button.svg"
+          ? "resources/hamburger-button.svg"
+          : "resources/close-button.svg"
       );
       nav.classList.toggle("active");
       fill.classList.toggle("active");
