@@ -68,6 +68,7 @@ function initMenuMobile() {
   const nav = document.querySelector("nav");
 
   function appearMenu(event) {
+    event.preventDefault();
     willActivate = burguerImg.classList.contains("active");
 
     burguerImg.classList.toggle("active");
