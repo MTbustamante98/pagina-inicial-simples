@@ -119,10 +119,14 @@ li a:hover::before {
 
   .header ul {
     display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0;
+    transform: none;
+    margin-top: 90px;
     /* transform: translate(0, 20%); */
-    position: absolute;
-    top: 80px;
-    left: -60px;
   }
 
   .header ul li {
@@ -145,8 +149,8 @@ li a:hover::before {
   .header .fill {
     display: none;
     position: fixed;
-    top: 500px;
-    left: 230px;
+    top: 520px;
+    left: 290px;
     z-index: 1;
     padding: 2px;
   }
