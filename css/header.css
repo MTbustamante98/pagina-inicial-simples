@@ -122,7 +122,7 @@ li a:hover::before {
     /* transform: translate(0, 20%); */
     position: absolute;
     top: 80px;
-    left: -40px;
+    left: -60px;
   }
 
   .header ul li {
@@ -146,7 +146,7 @@ li a:hover::before {
     display: none;
     position: fixed;
     top: 500px;
-    left: 250px;
+    left: 230px;
     z-index: 1;
     padding: 2px;
   }
