@@ -10,6 +10,7 @@
   display: flex;
   align-items: center;
   justify-self: center;
+  margin-left: 100px;
 }
 
 .header .logo {
@@ -114,18 +115,19 @@ li a:hover::before {
     top: 0;
     z-index: 1;
     display: none;
+    margin-left: 0;
   }
 
   .header ul {
-    display: block;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     gap: 0;
-    transform: none;
     margin-top: 90px;
-    /* transform: translate(0, 20%); */
+    margin-left: 0;
+    position: absolute;
+    left: 100px;
   }
 
   .header ul li {

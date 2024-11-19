@@ -122,6 +122,7 @@
 
   .south-continent span {
     color: var(--cor-5);
+    font-size: 0.725rem !important;
   }
 
   .picture {
