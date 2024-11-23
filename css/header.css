@@ -113,7 +113,13 @@ li a:hover::before {
     top: 0;
     z-index: 1;
     display: none;
-    margin-left: 0;
+  }
+
+  .header nav.active {
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   .header ul {
@@ -122,10 +128,8 @@ li a:hover::before {
     align-items: center;
     justify-content: center;
     gap: 0;
-    margin-top: 90px;
+    margin-top: 20px;
     transform: 0;
-    position: absolute;
-    left: 100px !important;
   }
 
   .header ul li {
