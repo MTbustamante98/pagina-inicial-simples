@@ -10,7 +10,7 @@
   display: flex;
   align-items: center;
   justify-self: center;
-  margin-left: 100px;
+ transform: translateX(70px);
 }
 
 .header .logo {
@@ -81,8 +81,6 @@ li a:hover::before {
   display: none;
 }
 
-
-
 @media (max-width: 800px) {
   .header {
     display: flex;
@@ -125,9 +123,9 @@ li a:hover::before {
     justify-content: center;
     gap: 0;
     margin-top: 90px;
-    margin-left: 0;
+    transform: 0;
     position: absolute;
-    left: 100px;
+    left: 100px !important;
   }
 
   .header ul li {
