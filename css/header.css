@@ -150,9 +150,10 @@ li a:hover::before {
 
   .header .fill {
     display: none;
-    position: absolute;
-    left: 320px;
-    top: 500px;
+    position: fixed;
+    left: 60%;
+    top: 87%;
+    transform: translate(-50%, -50%);
     z-index: 1;
     margin: 0;
     padding: 2px;
