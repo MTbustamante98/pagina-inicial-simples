@@ -119,6 +119,7 @@ li a:hover::before {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 0;
   }
 
   .header ul {
@@ -149,17 +150,12 @@ li a:hover::before {
 
   .header .fill {
     display: none;
-    position: fixed;
-    top: 520px;
-    left: 290px;
+    position: absolute;
+    left: 320px;
+    top: 500px;
     z-index: 1;
+    margin: 0;
     padding: 2px;
-  }
-
-  .header .fill.active {
-    display: flex;
-    align-items: center;
-    justify-content: center;
   }
 
   [data-animacao="button"] {
