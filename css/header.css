@@ -128,11 +128,13 @@ li a:hover::before {
     justify-content: center;
     gap: 0;
     padding-top: 0;
-    margin: 0;
+    margin-top: 0;
   }
 
   .header ul li {
-    margin-bottom: 60px;
+    transform: translateY(-20%);
+    margin-bottom: 50px;
+    padding: 0;
   }
 
   .header li a {
@@ -152,7 +154,7 @@ li a:hover::before {
     display: none;
     position: fixed;
     left: 60%;
-    top: 87%;
+    top: 83%;
     transform: translate(-50%, -50%);
     z-index: 1;
     margin: 0;
